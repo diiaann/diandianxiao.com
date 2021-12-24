@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-sans;
+    @apply text-4xl;
+    @apply pb-3;
+    @apply mb-5;
+    @apply text-forest-600;
+  }
+  h3 {
+    @apply text-2xl;
+    @apply text-forest-600;
+    @apply pb-2;
+    @apply mb-2;
+    @apply font-serif;
+  }
+  h4 {
+    @apply text-gray-700;
+    @apply text-lg;
+    @apply pb-1;
+    @apply mb-1;
+    @apply font-semibold;
+    @apply font-sans;
+    @apply tracking-wide;
+    text-transform: uppercase;
+  }
+  p {
+    @apply text-xl;
+    @apply leading-8;
+    @apply text-forest-600;
+    @apply font-serif;
+		font-weight: 300;
+    padding-bottom: 1.25rem;
+  }
+  ul {
+    list-style: disc;
+    @apply ml-6;
+    @apply pl-6;
+  }
+  ol {
+    list-style: decimal;
+    @apply ml-6;
+    @apply pl-6;
+  }
+  ul li, ol li {
+    @apply text-xl;
+    @apply leading-8;
+    @apply text-forest-600;
+    @apply font-serif;
+		font-weight: 300;
+    padding-bottom: 1.25rem;
+  }
+  blockquote {
+    @apply font-sans;
+    @apply text-xl;
+    @apply leading-8;
+    @apply text-forest-600;
+    @apply pb-1;
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+    border-left: 5px solid lightgray;
+  }
+  a {
+    @apply text-vermillion-500;
+    text-decoration: underline;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-fixed-container {
+    width: calc(100vw - 38rem);
+  }
+}
+
+@media (min-width: 1280px) {
+  .carousel-fixed-container {
+    width: calc(100vw - 42rem);
+  }
+}
