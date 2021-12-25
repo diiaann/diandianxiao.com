@@ -5,13 +5,22 @@
 @layer base {
   h1 {
     @apply font-sans;
-    @apply text-4xl;
+    @apply font-semibold;
+    @apply text-5xl;
     @apply pb-3;
     @apply mb-5;
+    color: #354135;
+  }
+  h2 {
+    border-bottom: 1px solid lightgray;
+    @apply text-2xl;
     @apply text-forest-600;
+    @apply pb-5;
+    @apply mb-5;
+    @apply font-serif;
   }
   h3 {
-    @apply text-2xl;
+    @apply text-xl;
     @apply text-forest-600;
     @apply pb-2;
     @apply mb-2;
@@ -19,18 +28,18 @@
   }
   h4 {
     @apply text-gray-700;
-    @apply text-lg;
+    @apply text-base;
     @apply pb-1;
     @apply mb-1;
     @apply font-semibold;
     @apply font-sans;
-    @apply tracking-wide;
+    @apply tracking-wider;
     text-transform: uppercase;
   }
   p {
     @apply text-xl;
     @apply leading-8;
-    @apply text-forest-600;
+    color: #4d4d4d;
     @apply font-serif;
 		font-weight: 300;
     padding-bottom: 1.25rem;
