@@ -17,7 +17,7 @@ const Post = (props) => {
   } = props 
 
   return (
-    <div className="h-full h-screen">
+    <div>
       <Head>
 		    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6338032/7263032/css/fonts.css" />
         <title>Dian Xiao</title>
@@ -27,14 +27,14 @@ const Post = (props) => {
         <Header />
       </div>
 
-      <article className="container mx-auto max-w-4xl px-5 sm:px-6 md:px-10">
+      <article className="container mx-auto max-w-4xl px-5 sm:px-6 md:px-10 mb-10">
         <h1 className="border-b border-solid">{title}</h1>
-      <BlockContent
-        blocks={body}
-        imageOptions={{fit: 'max' }}
-        serializers={{marks: {smallcaps}}}
-        {...client.config()}
-      />
+        <BlockContent
+          blocks={body}
+          imageOptions={{fit: 'max' }}
+          serializers={{marks: {smallcaps}}}
+          {...client.config()}
+        />
       </article>
     </div>
   )

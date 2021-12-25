@@ -12,7 +12,7 @@ function About() {
 
       <div className="container mx-auto max-w-4xl p-5 sm:p-6 md:p-10">
       <Header />
-      <h3 className="font-sans">About me</h3>
+      <h2>About me</h2>
       <p className="text-lg">
         I'm a product designer working in digital health based out of San Francisco.
       </p>
@@ -59,7 +59,7 @@ function About() {
         Design respectively)
       </p>
 
-      <h3 className="font-sans">About this blog</h3>
+      <h2>About this blog</h2>
       <p className="text-lg">
         This site is just a repository of my writing and thoughts. I've been writing for myself in random journals or Google docs but I found these pieces never got finished. I wanted to challenge myself to polish these drafts some more. Medium, Substack, tumblr didn't feel like the right place. I needed a place to publish writing without the expectation of readership but still public enough that felt like something was at stake.
       </p>
