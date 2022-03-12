@@ -11,7 +11,7 @@ function Home(props) {
 
     <div>
       <Head>
-		    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6338032/7263032/css/fonts.css" />
+		    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6338032/7337432/css/fonts.css" />
         <title>Dian Xiao</title>
       </Head>
     <div className="container mx-auto max-w-4xl p-5 sm:p-6 md:p-10">

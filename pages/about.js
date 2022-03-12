@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="h-full h-screen">
       <Head>
-		    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6338032/7263032/css/fonts.css" />
+		    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6338032/7337432/css/fonts.css" />
         <title>Dian Xiao</title>
       </Head>
 

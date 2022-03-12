@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="h-full h-screen">
       <Head>
-		    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6338032/7263032/css/fonts.css" />
+		    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6338032/7337432/css/fonts.css" />
         <title>Dian Xiao</title>
       </Head>
 
@@ -23,6 +23,12 @@ function About() {
     <p>Currently as of 2021, an electric motor is the most popular choice to power stationary tools, though in the past they were powered by windmills, water wheels, and steam. Some museums and hobbyists still maintain and operate stationary tools powered by these older power sources.</p>
     <h4>Another Header</h4>
     <p>Currently as of 2021, an electric motor is the most popular choice to power stationary tools, though in the past they were powered by windmills, water wheels, and steam. Some museums and hobbyists still maintain and operate stationary tools powered by these older power sources.</p>
+      <figure><img src="https://cdn.sanity.io/images/jk66xbay/production/338c37e314897db3f76b7088cea01e03e70b3a49-3024x3420.jpg"/><figcaption>this is big sky</figcaption></figure>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
     </div>
   </div>
   );

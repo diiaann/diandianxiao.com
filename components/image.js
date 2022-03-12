@@ -12,6 +12,6 @@ export default function ImageWithCaption({alt, path, width, height, caption, pri
 					className="pb-2"
 					layout="responsive"
 				/>
-        {caption && <caption className="block mb-4 italic text-gray-600 text-base">{caption}</caption>}
+        {caption && <figcaption className="block mb-4 italic text-gray-600 text-base">{caption}</figcaption>}
     </figure>)
 }
