@@ -13,18 +13,18 @@
   }
   h2 {
     border-bottom: 1px solid lightgray;
+    @apply font-semibold;
     @apply text-2xl;
     @apply text-forest-600;
-    @apply pb-5;
-    @apply mb-5;
-    @apply font-serif;
+    @apply pb-4;
+    @apply mb-4;
   }
   h3 {
     @apply text-xl;
+    @apply font-semibold;
     @apply text-forest-600;
     @apply pb-2;
     @apply mb-2;
-    @apply font-serif;
   }
   h4 {
     @apply text-gray-700;
@@ -40,7 +40,6 @@
     @apply text-xl;
     @apply leading-8;
     color: #4d4d4d;
-    @apply font-serif;
 		font-weight: 300;
     padding-bottom: 1.25rem;
   }
@@ -54,14 +53,23 @@
     @apply ml-6;
     @apply pl-6;
   }
+  ul, ol {
+    padding-bottom: .75rem;
+  }
+
   ul li, ol li {
     @apply text-xl;
     @apply leading-8;
     @apply text-forest-600;
-    @apply font-serif;
 		font-weight: 300;
-    padding-bottom: 1.25rem;
+    padding-bottom: .5rem;
   }
+
+  figure {
+    @apply py-4;
+    @apply my-4;
+  }
+
   blockquote {
     @apply font-sans;
     @apply text-xl;
