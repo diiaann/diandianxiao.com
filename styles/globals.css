@@ -68,6 +68,11 @@
   figure {
     @apply my-4;
   }
+  figcaption {
+    @apply py-2;
+    font-style: italic;
+    @apply text-gray-700;
+  }
 
   blockquote {
     @apply font-sans;

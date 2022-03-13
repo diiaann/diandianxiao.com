@@ -1,12 +1,38 @@
 import Head from 'next/head'
 import client from '../../client'
-import BlockContent from '@sanity/block-content-to-react'
+import { PortableText } from '@portabletext/react'
+import imageUrlBuilder from '@sanity/image-url'
+import { getImageDimensions } from '@sanity/asset-utils'
 import Header from '../../components/header'
 
+
+const builder = imageUrlBuilder(client)
+
+function urlFor(source) {
+  return builder.image(source)
+}
 
 const smallcaps = props => (
   <span style={{  fontFamily: '"Chronicle SSm SC A", "Chronicle SSm SC B"', fontSize: "1.8rem", fontVariant: 'small-caps' }}>{props.children}</span>
 )
+
+const ImageComponent = ({value}) => {
+  const {width, height} = getImageDimensions(value)
+  return (
+    <figure>
+      <img
+        src={urlFor().image(value.asset).width(800).fit('max').auto('format').url()}
+        alt={value.alt || ' '}
+        loading="lazy"
+        style={{
+          // Avoid jumping around with aspect-ratio CSS property
+          aspectRatio: width / height,
+        }}
+      />
+    {value.caption && <figcaption>{value.caption}</figcaption>}
+    </figure>
+  )
+}
 
 const Post = (props) => {
   const {
@@ -29,10 +55,15 @@ const Post = (props) => {
 
       <article className="container mx-auto max-w-4xl px-5 sm:px-6 md:px-10 mb-10">
         <h1 className="border-b border-solid">{title}</h1>
-        <BlockContent
-          blocks={body}
+        <PortableText
+          value={body}
           imageOptions={{fit: 'max' }}
-          serializers={{marks: {smallcaps}}}
+          components={{
+            types: {
+              marks: {smallcaps},
+              image: ImageComponent 
+            }
+          }}
           {...client.config()}
         />
       </article>
