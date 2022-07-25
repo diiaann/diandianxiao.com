@@ -60,7 +60,7 @@
   ul li, ol li {
     @apply text-xl;
     @apply leading-8;
-    @apply text-forest-600;
+    color: #4d4d4d;
 		font-weight: 300;
     padding-bottom: .5rem;
   }

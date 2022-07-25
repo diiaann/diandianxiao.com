@@ -49,9 +49,7 @@ const Post = (props) => {
         <title>Dian Xiao</title>
       </Head>
 
-      <div className="container mx-auto max-w-4xl p-5 sm:p-6 md:p-10">
-        <Header />
-      </div>
+      <Header />
 
       <article className="container mx-auto max-w-4xl px-5 sm:px-6 md:px-10 mb-10">
         <h1 className="border-b border-solid">{title}</h1>

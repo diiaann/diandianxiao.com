@@ -9,9 +9,9 @@ function About() {
 		    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6338032/7337432/css/fonts.css" />
         <title>Dian Xiao</title>
       </Head>
-
-      <div className="container mx-auto max-w-4xl p-5 sm:p-6 md:p-10">
       <Header />
+
+      <div className="container mx-auto max-w-4xl px-5 sm:px-6 md:px-10 mb-10">
       <h2>About me</h2>
       <p className="text-lg">
         I'm a product designer working in digital health based out of San Francisco.
