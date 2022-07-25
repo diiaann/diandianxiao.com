@@ -1,4 +1,4 @@
-import StarIcon from './StarIcon'
+import StarIcon from './starIcon'
 
 export default function Rating({ rating }) {
   let stars = []
