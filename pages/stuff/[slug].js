@@ -19,6 +19,10 @@ const Stuff = (props) => {
     title = 'Missing title',
     productImage = '',
     publishedAt = '',
+    brand = '',
+    sizeVariant = '',
+    cost = '',
+    link = '',
     rating = 0,
     description = []
   } = props 
@@ -42,6 +46,7 @@ const Stuff = (props) => {
             />
           </div>
           <div className="col-span-12 md:col-span-7">
+            <h4 className="font-normal pb-0 text-sm mb-1">{brand}</h4>
             <h3 className="border-b border-solid">{title}</h3>
             <div className="pb-3">{rating!=0 && <Rating rating={rating}/>}</div>
             <PortableText
@@ -49,6 +54,7 @@ const Stuff = (props) => {
               imageOptions={{fit: 'max' }}
               {...client.config()}
             />
+            <a href={link}>More info</a>
           </div>
         </div>
       </div>
