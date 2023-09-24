@@ -8,19 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "@portabletext/react": "^1.0.4",
+    "@portabletext/react": "^3.0.4",
     "@sanity/asset-utils": "^1.2.3",
     "@sanity/client": "^2.10.5",
     "@sanity/image-url": "^1.0.1",
     "autoprefixer": "^10.0.4",
     "groq": "^2.2.6",
-    "leaflet": "^1.7.1",
     "next": "^13.2",
     "postcss": "^8.1.10",
-    "pure-react-carousel": "^1.27.6",
     "react": "^18.2",
     "react-dom": "^18.2",
-    "react-leaflet": "^3.2.2",
     "tailwindcss": "3.0.2"
   }
 }
