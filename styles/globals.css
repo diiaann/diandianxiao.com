@@ -4,12 +4,10 @@
 
 @layer base {
   h1 {
-    @apply font-sans;
-    @apply font-semibold;
     @apply text-5xl;
     @apply pb-3;
     @apply mb-5;
-    color: #354135;
+    color: #4d4d4d;
   }
   h2 {
     border-bottom: 1px solid lightgray;
@@ -31,13 +29,12 @@
     @apply text-base;
     @apply pb-1;
     @apply mb-1;
-    @apply font-semibold;
     @apply font-sans;
     @apply tracking-wider;
     text-transform: uppercase;
   }
   p {
-    @apply text-xl;
+    @apply text-lg;
     @apply leading-8;
     color: #4d4d4d;
 		font-weight: 300;
@@ -58,7 +55,7 @@
   }
 
   ul li, ol li {
-    @apply text-xl;
+    @apply text-lg;
     @apply leading-8;
     color: #4d4d4d;
 		font-weight: 300;
@@ -76,19 +73,25 @@
 
   blockquote {
     @apply font-sans;
-    @apply text-xl;
+    @apply text-lg;
+    font-style: italic;
     @apply leading-8;
-    @apply text-forest-600;
+    @apply text-gray-700;
     @apply pb-1;
     padding-left: 1.5rem;
     margin-bottom: 1.25rem;
     border-left: 5px solid lightgray;
   }
-  a {
-    @apply text-vermillion-500;
-    text-decoration: underline;
-  }
 }
+
+a {
+  @apply text-forest-100;
+}
+
+a:hover {
+  @apply text-forest-400;
+}
+
 @media (min-width: 1024px) {
   .carousel-fixed-container {
     width: calc(100vw - 38rem);

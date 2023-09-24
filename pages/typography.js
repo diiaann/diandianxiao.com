@@ -1,18 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Header from '../components/header'
 
-function About() {
-  return (
-    <div className="h-full h-screen">
-      <Head>
-		    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6338032/7337432/css/fonts.css" />
-        <title>Dian Xiao</title>
-      </Head>
+function Typography() {
+    return (
+    <div className="font-serif h-full h-screen">
 
       <div className="container mx-auto max-w-4xl p-5 sm:p-6 md:p-10">
-      <Header />
-      <h1>This is the largest header</h1>
+      <h1 className="font-serif">This is the largest header</h1>
       <p>
         A power tool is a tool that is actuated by an additional power source and mechanism other than the solely manual labor used with hand tools. The most common types of power tools use electric motors. Internal combustion engines and compressed air are also commonly used. Other power sources include steam engines, direct burning of fuels and propellants, such as in powder-actuated tools, or even natural power sources such as wind or moving water. Tools directly driven by animal power are not generally considered power tools.
       </p>
@@ -34,4 +28,4 @@ function About() {
   );
 }
 
-export default About;
+export default Typography;

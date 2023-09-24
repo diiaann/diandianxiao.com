@@ -1,10 +1,16 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './app/**/*.{js,ts,jsx,tsx}', // Note the addition of the `app` directory.
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    fontFamily: {
-      sans: ["Whitney A", "Whitney B", 'sans-serif'],
-      serif: ["Chronicle SSm A", "Chronicle SSm B", 'serif'],
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-graphik)'],
+        serif: ['var(--font-garamond)'],
+      },
     },
     colors: {
       transparent: 'transparent',

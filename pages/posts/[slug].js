@@ -52,7 +52,7 @@ const Post = (props) => {
       <Header />
 
       <article className="container mx-auto max-w-4xl px-5 sm:px-6 md:px-10 mb-10">
-        <h1 className="border-b border-solid">{title}</h1>
+        <h1>{title}</h1>
         <PortableText
           value={body}
           imageOptions={{fit: 'max' }}

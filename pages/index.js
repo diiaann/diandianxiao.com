@@ -11,20 +11,19 @@ function Home(props) {
 
     <div>
       <Head>
-		    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6338032/7337432/css/fonts.css" />
         <title>Dian Xiao</title>
       </Head>
       <Header />
       <div className="container mx-auto max-w-4xl px-5 sm:px-6 md:px-10 mb-10">
-        <ul className="divide-y m-0 p-0">
+        <ul className="list-none divide-y m-0 p-0">
           {posts.map(
               ({ _id, title = '', slug = '', publishedAt = '' }) =>
                 slug && (
-                  <li className="flex justify-between font-sans items-center py-2" key={_id}>
-                    <Link href="/posts/[slug]" as={`/posts/${slug.current}`}>
-                      <a className="cursor-pointer text-2xl no-underline pr-2">{title}</a>
+                  <li className="py-4" key={_id}>
+                    <Link className="cursor-pointer text-4xl no-underline pr-2 text-gray-800" href="/posts/[slug]" as={`/posts/${slug.current}`}>
+                       {title}
                     </Link>{' '}
-                    <span className="text-gray-600">{new Date(publishedAt).toLocaleDateString('en-US')}</span>
+                    <div className="text-gray-600 text-xs pt-2">{new Date(publishedAt).toLocaleDateString('en-US')}</div>
                   </li>
                 )
           )}
